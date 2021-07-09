@@ -1,0 +1,28 @@
+import java.util.*;
+class palindromestring
+{
+public static void main(String args[])
+{
+	int i,j=0,k,c=0;
+	String str;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter string:");
+	str=sc.nextLine();
+	char ch[]=str.toCharArray();
+	k=ch.length-1;
+	for(i=0;i<ch.length/2;i++)
+	{
+	if(ch[j]==ch[k])
+	{
+	j++;
+	k--;
+	c++;
+	}
+	}
+	if(c==ch.length/2)
+	System.out.println("palindrome");
+	else
+	System.out.println("not palindrone");
+}
+}
+
